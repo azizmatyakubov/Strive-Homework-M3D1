@@ -125,7 +125,7 @@ function calculate(int1, int2) {
   
   let arrayOf2 = [2, 5];
   
-  console.log(testArray(arrayOf2));
+  
   
   /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
       Return `true` if it doesn't, `false` if it does. */
@@ -136,7 +136,7 @@ function calculate(int1, int2) {
     return !contains1 && !contains3;
   }
   
-  console.log(testArray2(arrayOf2));
+ 
   
   /* 11. Create a function to find the longest string from a given array of strings. 
       Pass the array as parameter and return the longest string. */
@@ -153,16 +153,6 @@ function calculate(int1, int2) {
     return longestString;
   }
   
-  let starWars = [
-    "Luke",
-    "Han",
-    "Leia",
-    "C3PO",
-    "Chewie",
-    "Darth Vader",
-    "R2-D2",
-  ];
-  console.log(longestString(starWars));
   
   /* 12. Create a function to find the types of a given angle:
     1. Acute angle ⇒ between 0 and 90 degrees. Return `acute`.
@@ -171,22 +161,6 @@ function calculate(int1, int2) {
       4. Straight angle ⇒ 180 degrees. Return `straight`
       Pass the angle as a parameter.
   */
-  
-  /*function angle(angleValue) {
-  let typeOfAngle = ""
-      switch (angleValue) {
-          case (angleValue < 90 && angleValue > 0): typeOfAngle = "acute";
-              break;
-          case angleValue === 90: typeOfAngle = "right";
-              break;
-          case angleValue < 180 && angleValue > 90: typeOfAngle = "obtuse";
-              break;
-          case angleValue === 180: typeOfAngle = "straight";
-              break;    
-          default: "Please enter a value between 0 and 180"
-              break;
-      } return typeOfAngle
-  }*/
   
   function angle(angleValue) {
     if (angleValue < 90 && angleValue > 0) {
@@ -198,11 +172,11 @@ function calculate(int1, int2) {
     } else if (angleValue === 180) {
       return "straight";
     } else {
-      return "Please enter a value between 0 and 180";
+      return "Error";
     }
   }
   
-  console.log(angle(129));
+
   
   /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
   
@@ -219,17 +193,18 @@ function calculate(int1, int2) {
         return greatestElementIndex
   }
   
-  let numbersArray = [1,3,5,7,10,8,0,2]
-  console.log(findAndReturnIndex(numbersArray))
   
   /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
   function findLargestEven(array) {
+
   let onlyEvens = []
       for (let i = 0; i < array.length; i++) {
           if (array[i] % 2 === 0) {
           onlyEvens.push(array[i]);
           }
       }
+
+
   let greatestEven = onlyEvens[0]
   for (let i = 0; i <onlyEvens.length; i++) {
       if (onlyEvens[i] > greatestEven) {
@@ -240,7 +215,7 @@ function calculate(int1, int2) {
   
   }
   
-  console.log(findLargestEven(numbersArray))
+  
   
   /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
       Return `true` if that's the case, return `false` if it's not. */
